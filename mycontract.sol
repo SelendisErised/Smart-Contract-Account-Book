@@ -52,10 +52,6 @@ contract Splitwise{
         if(!existUser(msg.sender)) users.push(msg.sender);
     }
     
-    
-    //----------------------------------------------------------
-    //helper functions
-    //----------------------------------------------------------
     function existAnyCreditor(address debtor) private view returns(bool){
         if(creditAccMap[debtor].length == 0) return false;
         return true;
