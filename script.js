@@ -66,9 +66,9 @@ var abi = [
 ]; 
 
 abiDecoder.addABI(abi);
-// Change the contractAddress with the deployed contract address
 
-var contractAddress = '0xD3dE0359367675533b4Ba7824c5dEBe8613e5693'; // FIXME: fill this in with your contract's address/hash
+// Change the contractAddress with the deployed contract address
+var contractAddress = '0xD3dE0359367675533b4Ba7824c5dEBe8613e5693';
 var BlockchainSplitWise = new web3.eth.Contract(abi, contractAddress);
 
 var debtor2CreditorsMap = {};
